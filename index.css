@@ -1,0 +1,125 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  margin: 0;
+  padding:0;
+  background-color: azure;
+  font-family: helvetica;
+}
+
+html{
+  overflow-y:scroll;
+  overflow-x: hidden;
+  margin: 0;
+  padding:0;
+}
+
+img {
+  border: 0px solid #ddd;
+  width: 55px;
+  height: 54px;
+}
+
+.footer {
+  position: fixed;
+  font-size: 16px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(201, 76, 76, 0.3);
+  color: black;
+  text-align: center; 
+}
+
+.active {
+  background-color: #4CAF50;
+  padding: 0.9em;
+}
+
+.index-news {
+  width: 100%;
+  height: 100%;
+  padding: 100px 50px;
+  overflow: hidden;
+}
+
+.index-news article{
+  width: 40%;
+  height: 65%;
+  background-color: lightgray;
+  font-size: 21px;
+  float: left;
+  margin: 10px 65px 5% 4%;
+}
+
+.index-news p {
+  font-weight: 100px;
+  font-family: helvetica;
+  font-size: 16px;
+  text-align:center;
+  padding-bottom: 3px;
+  padding-top: 10px;
+  color: black;
+}
+
+.index-news h3 {
+  font-weight: 100px;
+  font-family: helvetica;
+  font-size: 17px;
+  text-align:center;
+  padding-top: 10px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.news-img {
+  width: 100%
+  height: 120px;
+  background-color: black;
+}
+
+.news-img1 {
+  width: 100%;
+  height: 120px;
+  background-color: #000;
+  background-image: url('tesla.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.news-img2 {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  background-image: url('dotnet.jpg');
+  background-repeat: no-repeat;
+  background-position: center 39%;
+}
+
+.news-img3 {
+  width: 100%;
+  height: 120px;
+  background-color: #000;
+  background-image: url('python.png');
+  background-repeat: no-repeat;
+  background-position: 60% 35%;
+}
+
+.news-img4 {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  background-image: url('aws.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px 150px;
+}
+
+.w3-bar {
+	margin-bottom: -10px;
+}

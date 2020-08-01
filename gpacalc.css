@@ -1,0 +1,123 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  margin: 0;
+  padding:0;
+  background-color: azure;
+  font-family: helvetica;
+}
+
+html{
+  overflow-y:scroll;
+  overflow-x: hidden;
+  margin: 0;
+  padding:0;
+}
+
+h4 {
+  margin-top: 0px;
+  text-align: center;
+  float: right;
+}
+
+img {
+  border: 0px solid #ddd;
+  width: 55px;
+  height: 54px;
+}
+
+input[type=text] {
+  width: 40%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+label {
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+  margin-left: 70%;
+  margin-bottom: 5px;
+  color: black;
+  font-style: bold;
+  font-size: 18px;
+}
+
+.labelClass {
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+}
+
+.inputClass {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  margin-left: 0%;
+}
+
+.type {
+  margin-top: 4%;
+}
+
+.type:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form {
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .labelClass, .inputClass, input[type=button] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.footer {
+  display: inline-block;
+  font-size: 16px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(201, 76, 76, 0.3);
+  color: black;
+  text-align: center;
+  position: fixed;  
+}
+
+input[type=button] {
+  background-color: #4CAF50;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.buttonClass {
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+}
+
+.buttontype {
+  margin-left: 40%;
+  margin-top: 20px;
+}
+  
+
+

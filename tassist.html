@@ -1,0 +1,121 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Teacher Assistant</title>
+
+    <!-- Custom styles for this template -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="tassist.css" rel="stylesheet">
+	
+	<script type="text/javascript">
+		var formValidate = function() {
+			var name_regex = /^[a-zA-Z]{3,30}$/;
+			var id_regex = /^\d{6}$/
+			var gpa_regex = /^[0-4]\.[0-9]$/
+			
+			var name = document.getElementById("name").value;
+			var id = document.getElementById("id").value;
+			var gpa = document.getElementById("gpa").value;
+	
+			if(name == null || name == '' || (name_regex.test(name) == false)) {
+				alert("Enter a valid Name with at least 3 characters");
+				return false;
+			}
+			if(id == null || id == '' || (id_regex.test(id) ==false)) {
+				alert("Enter a valid ID with 6 digits");
+				return false;
+			}
+			if(gpa == null || gpa == '' || (gpa_regex.test(gpa) == false)) {
+				alert("Enter a valid GPA in points");
+				return false;
+			}
+		};
+	</script>
+
+</head>
+
+<body>
+<header>
+	<div class="w3-bar w3-indigo" style="position:fixed">
+	   <img src="logo.png" class="w3-bar-item w3-button">
+	   <a href="index.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Home</a>
+	   <a href="CSdesc.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">CS Desription</a>
+	   <a href="books.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Books</a>
+       <a href="tassist.html" class="w3-bar-item w3-button w3-green w3-padding-16 w3-hover-red">Teaching Assistant</a>
+	   <a href="gpacalc.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">GPA Calculator</a>
+	   <a href="tassist.html" style="float:right" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Teaching Assistant</a>
+    </div>
+</header>
+<br/><br/>
+<div class="form">
+  <form id="teachForm" name="teachForm" method="post" action="formsubmit.html" onsubmit="return formValidate()">
+    <div class="type">
+      <div class="labelClass">
+        <label for="fname">Full Name</label>
+      </div>
+      <div class="inputClass">
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </div>
+    </div>
+    <div class="type">
+      <div class="labelClass">
+        <label for="id">ID</label>
+      </div>
+      <div class="inputClass">
+        <input type="text" id="id" name="id" placeholder="Enter your ID">
+      </div>
+    </div>
+	<div class="type">
+      <div class="labelClass">
+        <label for="gpa">GPA</label>
+      </div>
+      <div class="inputClass">
+        <input type="text" id="gpa" name="gpa" minlength="1" placeholder="Enter your GPA">
+      </div>
+    </div>
+	<div class="type">
+      <div class="labelClass">
+        <label for="sdate">Submission Date</label>
+      </div>
+      <div class="inputClass">
+        <input type="date" name="sdate">
+      </div>
+    </div>
+    <div class="type">
+      <div class="labelClass">
+        <label name="gender">Gender</label>
+      </div>
+      <div class="inputClass">
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+    </div>
+    <div class="type">
+      <div class="labelClass">
+        <label name="comments">Comments</label>
+      </div>
+	<div class="inputClass">
+        <textarea name="comments" placeholder="Comments" style="height:100px"></textarea>
+      </div>
+    </div>
+    <div class="type">
+      <input type="submit" id="submit" value="Submit">
+    </div>
+</form>
+</div>
+
+<footer>
+	<div class="footer">
+		<p>John, Bliss &copy;, 1234567890</p>
+	</div>
+</footer>
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+
+</body>
+</html>
